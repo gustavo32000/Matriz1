@@ -6,7 +6,21 @@ namespace Matriz1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string[,] produtos = {
+                                {"Nome","Preço"},
+                                {"Calça","50"},
+                                {"Blusa","25"},
+                                {"meia","15"},
+                                {"Bermuda","45"}
+                            };
+            for (int linha = 0; linha <= 4; linha++)
+            {
+                for (int coluna = 0; coluna <= 1; coluna++)
+                {
+                    Console.Write(produtos[linha, coluna] + "\t\t");
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
